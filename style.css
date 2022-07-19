@@ -97,6 +97,8 @@ h1, h2, h3, h4 {
     grid-template-columns: repeat(3, 1fr);
     margin-left: 20px;
     gap: 20px;
+    align-items: center;
+
 }
 
 .col-3-post{
@@ -123,6 +125,40 @@ h1, h2, h3, h4 {
 .post-meta-box span i {
     padding-right: 4px;
 }
+.view-all{
+    display: none;
+}
+
+/* Upcoming Match css */
+.upcoming-match {
+    padding: 80px 0;
+}
+.match-date {
+    padding: 40px 25px;
+
+}
+.a-vs-r-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a-vs-r-img img{
+    padding: 5px 15px;
+    width: 40%;
+}
+.match-date h4,
+.match-date p {
+    text-align: center;
+    margin: 10px 0;
+}
+.match-date h4 {
+    font-size: 20px;
+}
+.match-date p {
+    font-size: 14px;
+    color: #686868;
+}
+
 
 
 /* footer css */
