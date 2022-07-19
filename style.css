@@ -100,7 +100,6 @@ h1, h2, h3, h4 {
     align-items: center;
 
 }
-
 .col-3-post{
     box-shadow: 0px 2px 5px #dddddd;
     border-radius: 10px;
@@ -182,9 +181,54 @@ hr{
     margin: auto;
     color: #dddddd;
 }
-.footer-menu a{
+.footer-menu a {
     color: gainsboro;
     text-decoration: none;
     display: inline-block;
     padding: 7px 20px;
+}
+
+/* Responsive css */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+        width: 96%;
+    }
+    .half-width h1{
+        color: white;
+        font-size: 35px;
+        line-height: 1.2em;
+    }
+
+
+    .menu-with-post-area {
+        flex-direction: column;
+    }
+    .menu-area{
+        width: 100% !important;
+        text-align: center;
+     }
+    .menu-items {
+        background: none !important;
+    }
+    .menu-items a {
+        display: inline-block !important;
+    }
+    .post-area {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0px;
+    
+    }
+
+
+    .view-all {
+        display: block;
+        text-align: center;
+        padding: 8px 18px;
+        background-color: orangered;
+        border-radius: 5px;
+        color: white;
+    }
+
+    
 }
