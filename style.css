@@ -190,17 +190,14 @@ hr{
 
 /* Responsive css */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 767px) and (max-width: 992px) {
     .container {
         width: 96%;
     }
     .half-width h1{
-        color: white;
         font-size: 35px;
         line-height: 1.2em;
     }
-
-
     .menu-with-post-area {
         flex-direction: column;
     }
@@ -213,14 +210,14 @@ hr{
     }
     .menu-items a {
         display: inline-block !important;
+        border: 1px solid #404040;
+        margin: 25px 15px;
     }
     .post-area {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 0px;
     
     }
-
-
     .view-all {
         display: block;
         text-align: center;
@@ -229,6 +226,62 @@ hr{
         border-radius: 5px;
         color: white;
     }
+}
 
+@media screen and (max-width: 766px) {
+    .container {
+        width: 95% !important;
+    }
+    .half-width h1{
+        font-size: 35px;
+        line-height: 1.2em;
+        text-align: center;
+    }
+    .half-width p {
+        text-align: center;
+    }
+    .half-width a {
+        display: block;
+        text-align: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        margin: 15px 0;
+        padding: 0 20px;
+    }
+    .half-width {
+        width: 100% !important;
+        padding-top: 30px;
+    }
+
+    .menu-with-post-area {
+        flex-direction: column;
+    }
+    .menu-area{
+        width: 100% !important;
+     }
+
+    .menu-items {
+        background: none !important;
+    }
+    .menu-items a {
+        border: 1px solid #c6c6c6;
+        margin: 20px 15px;
+    }
+    .post-area {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
     
+    }
+    .footer-Goal h2 {
+        font-size: 30px;
+        padding: 30px 0 15px;
+    }
+    .footer-menu a {
+        display: block;
+        
+        padding: 12px 0px;
+
+    }
 }
