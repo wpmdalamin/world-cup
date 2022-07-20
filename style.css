@@ -45,6 +45,9 @@ h1, h2, h3, h4 {
     line-height: 1.7em;
     font-size: 17px;
 }
+.mobil-text {
+    display: none;
+}
 .half-width a{
     display: inline-block;
     color: white;
@@ -56,11 +59,24 @@ h1, h2, h3, h4 {
 }
 .half-width a i{
     color: white; 
-    font-size: 17px;  
+    font-size: 17px;
+    padding-left: 8px;
 }
 .half-width img {
-    width: 100%;
+    width: 100%; 
+    animation-name: alamin;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    position: relative;
 }
+@keyframes alamin {
+    0%   {right:-400px;}
+    50%  {right:3%; }
+    100% {right:6%; }
+  }
+    
+
+
 
 /* menu with post area   */
 
@@ -261,6 +277,13 @@ hr{
     }
     .half-width p {
         text-align: center;
+    }
+    .text-laptop-tab {
+        display: none;
+    }
+    .mobil-text {
+        display: block;
+        font-size: 17px;
     }
     .half-width a {
         display: block;
